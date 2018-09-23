@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    abrirTelaAdminitrador();
+                    abrirTelaPrincipal();
                     Toast.makeText(MainActivity.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Usuário ou senha inválidos! Tente novamente!", Toast.LENGTH_SHORT).show();
@@ -72,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void abrirTelaAdminitrador() {
+    private void abrirTelaPrincipal() {
 
-        Intent intent = new Intent(MainActivity.this, cadastroUsuarioActivity.class);
+        Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
         startActivity(intent);
     }
 

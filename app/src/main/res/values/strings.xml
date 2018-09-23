@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SigCar</string>
     <string name="title_activity_cadastro_usuario">cadastroUsuarioActivity</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
 </resources>

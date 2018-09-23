@@ -7,7 +7,7 @@ import android.widget.RadioButton;
 import com.sigcar.R;
 //import com.google.firebase.auth.FirebaseAuth;
 
-public class cadastroUsuarioActivity extends AppCompatActivity {
+public class CadastroUsuarioActivity extends AppCompatActivity {
 
     private EditText email;
     private EditText senha;
