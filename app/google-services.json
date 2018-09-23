@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1034888946715",
+    "firebase_url": "https://sigcar-99a2b.firebaseio.com",
+    "project_id": "sigcar-99a2b",
+    "storage_bucket": "sigcar-99a2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034888946715:android:9277177b732461f6",
+        "android_client_info": {
+          "package_name": "com.sigcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034888946715-7lp6lvuivheo4n1v6ve1m2dpnna9ggf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sigcar",
+            "certificate_hash": "22466ac57cdd14a84ee72e29160ebd9586eefd6c"
+          }
+        },
+        {
+          "client_id": "1034888946715-i6s5qkchfjra3ndfh8fef4d1l4ie53pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLM5pHDGeA_6mx5UVQ8afb48AE9G6U8V4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034888946715-i6s5qkchfjra3ndfh8fef4d1l4ie53pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
