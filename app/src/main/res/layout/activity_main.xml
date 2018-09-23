@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_marginBottom="16dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
+    android:background="@drawable/android_tela"
     android:gravity="center"
     android:orientation="vertical"
     tools:context="com.sigcar.Activity.MainActivity">
@@ -14,28 +15,39 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="Bem Vindo"
         android:textAlignment="center"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
         android:textSize="25sp" />
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-MAIL"
-        android:inputType="textEmailAddress" />
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:hint="E_mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light" />
 
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="SENHA"
-        android:inputType="textPassword" />
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN" />
+        android:text="login" />
 
 </LinearLayout>

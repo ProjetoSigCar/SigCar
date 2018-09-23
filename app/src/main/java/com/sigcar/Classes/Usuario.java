@@ -1,23 +1,18 @@
 package com.sigcar.Classes;
 
 
+import com.google.firebase.database.Exclude;
 
 public class Usuario {
 
-    private int id;
+
     private String email;
     private String senha;
     private String nome;
     private String tipoUsuario;
 
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getEmail() {
         return email;
@@ -27,10 +22,11 @@ public class Usuario {
         this.email = email;
     }
 
+    @Exclude
     public String getSenha() {
         return senha;
     }
-
+    @Exclude
     public void setSenha(String senha) {
         this.senha = senha;
     }
