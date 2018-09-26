@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
     android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
     android:background="@drawable/android_tela"
     android:gravity="center"
     android:orientation="vertical"
@@ -14,7 +14,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="Bem Vindo"
         android:textAlignment="center"
         android:textColor="@color/bootstrap_brand_secondary_fill"
@@ -49,5 +49,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="login" />
+
+    <Button
+        android:id="@+id/btnCadastrese"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastre_se" />
 
 </LinearLayout>

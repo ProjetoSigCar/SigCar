@@ -21,7 +21,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.sigcar.Classes.Usuario;
 import com.sigcar.DAO.ConfiguracaoFirebase;
 import com.sigcar.R;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
 

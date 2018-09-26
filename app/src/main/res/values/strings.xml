@@ -2,4 +2,16 @@
     <string name="app_name">SigCar</string>
     <string name="title_activity_cadastro_usuario">cadastroUsuarioActivity</string>
     <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="add_artist">ADD ARTIST</string>
+    <string name="digite_o_nome_do_artista">Digite o Nome do Artista</string>
+
+
+    <array name="genres">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>New Age</item>
+        <item>Blues</item>
+    </array>
+
 </resources>
