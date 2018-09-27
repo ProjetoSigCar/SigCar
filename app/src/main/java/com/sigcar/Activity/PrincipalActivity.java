@@ -1,80 +1,94 @@
 package com.sigcar.Activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.sigcar.R;
 
 public class PrincipalActivity extends AppCompatActivity {
 
-    private FirebaseAuth autenticacao;
-
+    private ListView listPrincipal;
+    private String[] itens = {
+            "Oleo do motor", "Pneu", "Filtro de Ar", "Pastilha de Freio", "Farol Lanterna", "Injeção/Carburador", "Filtro de Combustivel", "Outros serviçoes"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        long positionSelected = getIntent().getIntExtra("POSITION",0);
         setContentView(R.layout.activity_principal);
 
 
-//
-//        tipoUsuario = (TextView) findViewById(R.id.txtTipoUsuario);
-//
-        autenticacao = FirebaseAuth.getInstance();
-//
-//        referenciaFirebase = FirebaseDatabase.getInstance().getReference();
+
+        listPrincipal = findViewById(R.id.listPrincipal);
+
+        final ArrayAdapter<String> adaptador = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_expandable_list_item_1, android.R.id.text1, itens
 
 
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+        );
 
-        getMenuInflater().inflate(R.menu.menu_admin, menu);
-        return true;
+        listPrincipal.setAdapter(adaptador);
 
-    }
+        listPrincipal.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
 
-        int id = item.getItemId();
+                switch (position) {
 
-        if (id == R.id.action_add_usuario){
+                    case 0:
 
-            abrirTelaCadastroUsuario();
 
-        }else if (id == R.id.action_sair_admin){
+//                        Intent newActivity = new Intent(this, superleague.class);
+//                        startActivity(newActivity);
 
-            deslogarUsuario();
+                        Intent intent = new Intent(getApplicationContext(), MusicaActivity.class);
+                        startActivity(intent);
+                        break;
 
-        }
+                    case 1:
 
-        return  super.onOptionsItemSelected(item);
-    }
 
-    private void abrirTelaCadastroUsuario() {
-        Intent intent = new Intent(PrincipalActivity.this, CadastroUsuarioActivity.class);
+                        break;
 
-        startActivity(intent);
-    }
+                    case 2:
 
-    private void deslogarUsuario() {
 
-        autenticacao.signOut();
+                        break;
 
-        Intent intent = new Intent(PrincipalActivity.this, MainActivity.class);
-        startActivity(intent);
-        finish();
+                    case 3:
+
+
+                        break;
+
+                    case 4:
+
+
+                        break;
+
+                    case 5:
+
+
+                        break;
+
+                    case 6:
+
+
+                        break;
+
+
+                }
+
+            }
+
+        });
 
     }
 

@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.CadastroUsuarioActivity" />
-        <activity android:name=".Activity.PrincipalActivity" />
         <activity android:name=".Activity.MusicaActivity" />
-        <activity android:name=".Activity.AddTrackActivity"></activity>
+        <activity android:name=".Activity.AddTrackActivity" />
+        <activity android:name=".Activity.PrincipalActivity"></activity>
     </application>
 
 </manifest>

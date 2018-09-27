@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="16dp"
-    android:layout_marginTop="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
     android:background="@drawable/android_tela"
     android:gravity="center"
     android:orientation="vertical"
@@ -25,7 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/ic_email_black_24dp"
-        android:hint="E_mail"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="E-mail"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -42,7 +43,8 @@
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
-        android:textColorLink="@android:color/background_light" />
+        android:textColorLink="@android:color/background_light"
+        android:drawableLeft="@drawable/ic_lock_black_24dp" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -55,6 +57,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cadastre_se" />
+        android:text="@string/cadastre_se"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>

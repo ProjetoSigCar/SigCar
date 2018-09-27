@@ -14,6 +14,7 @@ public class ConfiguracaoFirebase {
     public static DatabaseReference getFirebase() {
         if (referenciaFirebase == null) {
             referenciaFirebase = FirebaseDatabase.getInstance().getReference();
+            referenciaFirebase.push ( ) . setValue ( autenticacao ) ;
         }
 
         return referenciaFirebase;

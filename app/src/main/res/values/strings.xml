@@ -5,6 +5,10 @@
     <string name="cadastre_se">Cadastre-se</string>
     <string name="add_artist">ADD ARTIST</string>
     <string name="digite_o_nome_do_artista">Digite o Nome do Artista</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">login</string>
+    <string name="seja_bem_vindo">Seja Bem Vindo!</string>
 
 
     <array name="genres">

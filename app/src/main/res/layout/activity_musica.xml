@@ -32,11 +32,11 @@
         android:id="@+id/buttonAddArtist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/spinnerGenres"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_marginTop="17dp"
-        android:text="ADD ARTIST" />
+        android:text="Adicionar Anotação" />
 
     <ListView
         android:id="@+id/listViewArtists"
